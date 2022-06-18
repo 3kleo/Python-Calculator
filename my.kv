@@ -10,7 +10,7 @@
 
 <MyGrid>
     id: calculator
-    rows: 5
+    rows: 6
     display: entry
     padding: 10
     spacing: 10
@@ -83,4 +83,4 @@
             on_press: calculator.calculate(entry.text)
         CustButton:
             text: "/"
-            on_press: calculator.calculate(entry.text)
+            on_press: entry.text += self.text
